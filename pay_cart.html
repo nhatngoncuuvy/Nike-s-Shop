@@ -1,0 +1,121 @@
+<html class="hydrated">
+
+<head>
+    <style data-styles="">
+        ion-icon {
+            visibility: hidden
+        }
+        
+        .hydrated {
+            visibility: inherit
+        }
+    </style>
+    <title> Payment Wishes </title>
+    <link rel="stylesheet" href="/pay-cart.css">
+    <link rel="shortcut icon" href="./img/img_logo/logowish.jpg">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="header-post">
+                <a href="index.html" class="btn-1">
+                    <ion-icon name="mail-outline" id="icon-gmail" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>nikejustdoit@gmail.com</a>
+                <a href="index.html" class="btn-1">
+                    <ion-icon name="call-outline" id="icon-call" role="img" class="md hydrated" aria-label="call outline"></ion-icon>Hotline: 0936363636</a>
+                <p class="btn-2">
+            </div>
+        </div>
+    </header>
+
+
+
+    <!---------------------details order----------------------->
+
+    <div class="details">
+        <div class="head">
+            <div class="logo">
+                <a href="index.html"><img src="/img/logo1.jpg" alt=""></a>
+                <span>Nike Fashion</span>
+            </div>
+
+            <div class="content1">
+                <span>Cart  &gt;  Shipment Details</span>
+            </div>
+            <div class="content2">
+                <span>Shipments Details</span>
+            </div>
+            <div class="information">
+                <input type="text" class="fullname" placeholder="Fullname..." id="namepayment">
+                <div>
+                    <input type="text" class="email" placeholder="Email..." id="emailpayment">
+                    <input type="text" class="phonenumber" placeholder="Phone number..." id="phonepayment">
+                </div>
+                <input type="text" class="address" placeholder="Address..." id="addpayment">
+                <div class="select">
+                    <select name="" id="city">
+                        <option value="">Select City    |    </option>
+                        <option value="">TP.HCM</option>
+
+                    </select>
+                    <select name="" id="district">
+                        <option value="">Select District  |  </option>
+                        <option value="">1</option>
+                    </select>
+                    <select name="" id="town">
+                        <option value="">Select Town  |  </option>
+                        <option value="">1</option>
+                    </select>
+                </div>
+                <div class="shippingmethods">
+                    <h3>Shipping Methods</h3>
+                    <div class="boxshippingmethods">
+                        <ion-icon name="file-tray-full-outline" role="img" class="md hydrated" aria-label="file tray full outline"></ion-icon>
+                        <p>Please select a province/city for a list of shipping methods.</p>
+                    </div>
+                </div>
+                <div class="paymentmethods">
+                    <h3>Payment Methods</h3>
+                    <div class="boxpaymentmethods">
+                        <ion-icon id="btn" name="radio-button-on-outline" role="img" class="md hydrated" aria-label="radio button on outline"></ion-icon>
+                        <ion-icon name="cash-outline" role="img" class="md hydrated" aria-label="cash outline"></ion-icon> <span>Pay on delivery (COD)  </span>
+                        <p>When the Shipper comes to pick up the goods, please pay the Shipper directly!</p>
+                    </div>
+                </div>
+                <div class="last">
+                    <span>Cart</span>
+                    <button class="btn-order">Order completion</button>
+                </div>
+            </div>
+        </div>
+        <div class="detailss">
+            <div class="img">
+                <table class="addthanhtoan">
+                    <tbody class="addthanhtoan1"></tbody>
+                </table>
+            </div>
+            <div class="sale">
+                <input type="text" placeholder="Discount code">
+                <button>Use</button>
+            </div>
+            <div class="mainn"></div>
+            <div class="total"></div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./shopping-cart.js"></script>
+    <script>
+        let btnOrder = document.querySelector(".btn-order");
+        btnOrder.addEventListener("click", () => {
+            alert("Your order is succesful.");
+            localStorage.clear();
+            location.reload();
+        })
+    </script>
+    <footer>
+    </footer>
+</body>
+
+</html>
